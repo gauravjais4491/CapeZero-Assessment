@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "strict": true,
+    "types": [
+      "node"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": [
+        "PageObjects/*"
+      ],
+      "@data/*": [
+        "Data/*"
+      ],
+      "@fixtures/*": [
+        "Fixtures/*"
+      ]
+    },
+  },
+}

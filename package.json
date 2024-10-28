@@ -1,0 +1,35 @@
+{
+  "name": "capezero-assessment",
+  "version": "1.0.0",
+  "description": "Amazon Test Cases",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "install-dependency": "npm install",
+    "regression-tests": "npx playwright test --grep @regression",
+    "sanity-tests": "npx playwright test --grep @sanity",
+    "all-tests": "npx playwright test",
+    "filter-tests": "npx playwright test ./tests/filterProduct.spec.ts",
+    "search-tests": "npx playwright test ./tests/productSearch.spec.ts",
+    "addToCart-tests": "npx playwright test ./tests/productDetails.spec.ts",
+    "allure-generate": "allure generate ./allure-results -o ./allure-report",
+    "allure-open": "allure open ./allure-report",
+    "open-html-report": "npx playwright show-report ./html-report"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gauravjais4491/CapeZero-Assessment.git"
+  },
+  "author": "Gaurav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gauravjais4491/CapeZero-Assessment/issues"
+  },
+  "dependencies": {
+    "@playwright/test": "^1.48.1",
+    "@types/node": "^22.7.8",
+    "allure-playwright": "^3.0.5",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.3"
+  }
+}
